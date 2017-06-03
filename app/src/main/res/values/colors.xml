@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e2bd9f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBusName">#22741C</color>
+    <color name="colorBusNumber">#FF0000</color>
+    <color name="colorBtnText">#ffFFFFFF</color>
+    <color name="colorBtnBg">#5561380B</color>
+    <color name="colorShapeTitle">#3061380B</color>
+</resources>

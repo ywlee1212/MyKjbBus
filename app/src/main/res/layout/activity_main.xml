@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.owner.mykjbbus.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kjbLayout"
+        android:background="@drawable/businfo_list"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/busLayout"
+            android:background="@drawable/shape_title"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="버스이름"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textColor="@color/colorBusName"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/busNumber"
+                android:layout_weight="1"
+                tools:text="송정33"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="@color/colorBusNumber"/>
+
+            <Button
+                android:text="위치"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/posBtn"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/colorBtnText"
+                android:background="@color/colorBtnBg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout01">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="LINE_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LINE_ID"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busid"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout02">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="LINE NAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LINE_NAME"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/busname" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout03">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="출발점"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DIR_UP_NAME"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bussplace"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout04">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="종점"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DIR_DOWN_NAME"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buseplace"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout05">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="첫차"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FIRST_RUN_TIME"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busftime"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout06">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="막차"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LAST_RUN_TIME"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busltime"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout07">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="배차 간격"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RUN_INTERVAL"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/businterval"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/detailLayout08">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="버스 구분"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LINE_KIND"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buskind"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_list">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
